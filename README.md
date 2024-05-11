@@ -10,15 +10,15 @@ This project is designed to automate interactions with professionals via Slack, 
 2. Install the required Python packages: 
 `pip install -r requirements.txt`
 3. Create a `.env` file in the project root directory with the necessary environmental variables:
-AZURE_OPENAI_API_KEY
-AZURE_OPENAI_ENDPOINT
-AZURE_OPENAI_API_VERSION
-AZURE_OPENAI_DEPLOYMENT_NAME
-AZURE_EMBEDDING_DEPLOYMENT_NAME
-LANGCHAIN_SMITH_API_KEY
-CALENDLY_EVENT_UUID
-CALENDLY_API_KEY
-SLACK_TOKEN
+`AZURE_OPENAI_API_KEY`
+`AZURE_OPENAI_ENDPOINT`
+`AZURE_OPENAI_API_VERSION`
+`AZURE_OPENAI_DEPLOYMENT_NAME`
+`AZURE_EMBEDDING_DEPLOYMENT_NAME`
+`LANGCHAIN_SMITH_API_KEY`
+`CALENDLY_EVENT_UUID`
+`CALENDLY_API_KEY`
+`SLACK_TOKEN`
 
 NOTE: You can also other llm api providers or can use open source llm's.
 
