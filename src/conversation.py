@@ -81,6 +81,8 @@ class ConversationChain(LLMChain):
         Keep your responses in short to retain professioanl attention. Never produce lists, just answers.
         Use only these emoji's (😊,👋,👍,🌟,💡,🎉,👉,🙌,🤗,😃,😅,🔎,🎓), and use them only when required and keep it professional, don't use emoji for every conversation.
         Use bullet points if chat text is lenghty to ask questions and also for answering questions.
+        Don't use professional name in all the conversation messages all the time.
+        Ask only one question at a time based on the conversation purpose, don't ask multiple questions in same conversation message.
         
         You must respond according to the previous conversation history and the stage of the conversation you are at.
         Only generate one response at a time for the questions.
@@ -173,7 +175,7 @@ class GPT(Chain):
     team_name:str = "R&D"
     conversation_type: str = "chat"
     professional_name: str = ""
-    conversation_purpose: str = "Introduce {recommendation} product/products explainng how it helps them, and recommend taking training and exploring {training_not_started}, aslo recommend professional to complete training on {training_in_progress} product since we know based on trainings data. Ask for {feedback} on  {product_used} product and later congratulate them for completing the {training_completed} training. Finally ask if there are interested in demo on any products they like."
+    conversation_purpose: str = f"Introduce {recommendation} product/products explainng how it helps them, and recommend taking training and exploring {training_not_started}, aslo recommend professional to complete training on {training_in_progress} product since we know based on trainings data. Ask for {feedback} on  {product_used} product and later congratulate them for completing the {training_completed} training. Finally ask if there are interested in demo on any products they like."
     
     def retrieve_conversation_stage(self, key):
         """Retrieve the description of the conversation stage based on a key."""
